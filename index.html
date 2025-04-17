@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startech | Tech Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Audio Control -->
+    <div class="audio-control">
+        <button id="audioToggle">
+            <i class="fas fa-volume-up" id="audioIcon"></i>
+        </button>
+        <audio id="backgroundAudio" loop>
+            <source src="background-audio.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <!-- Cursor Effect -->
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">STARTECH</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="STARTECH">STARTECH</h1>
+            <div class="typing-container">
+                <span class="static-text">I'm a </span>
+                <span class="dynamic-text" id="typingText"></span>
+                <span class="cursor">&nbsp;</span>
+            </div>
+            <p class="hero-description">Transforming ideas into digital reality</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary-btn">View Projects</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="profile-frame">
+                <div class="profile-image-container">
+                    <!-- Replace with actual image -->
+                    <img src="profile-placeholder.jpg" alt="Startech" class="profile-image">
+                </div>
+                <div class="tech-decoration">
+                    <div class="circuit-line cl-1"></div>
+                    <div class="circuit-line cl-2"></div>
+                    <div class="circuit-line cl-3"></div>
+                    <div class="circuit-dot cd-1"></div>
+                    <div class="circuit-dot cd-2"></div>
+                    <div class="circuit-dot cd-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2>About <span class="highlight">Me</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello! I'm Startech, a passionate tech enthusiast and developer dedicated to creating innovative digital solutions. With a strong foundation in modern technologies and a keen eye for detail, I transform complex problems into elegant solutions.</p>
+                <p>My journey in the tech world has equipped me with a diverse skill set and a problem-solving mindset. I believe in continuous learning and staying updated with the latest industry trends to deliver cutting-edge results.</p>
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="5">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="30">0</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                </div>
+                <a href="#" class="btn primary-btn">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-header">
+            <h2>Technical <span class="highlight">Skills</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Frontend Development</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML5</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>CSS3 & SASS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>React.js</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Backend Development</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Node.js</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Express.js</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>MongoDB</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>SQL</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Other Technologies</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Git & GitHub</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Docker</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>AWS</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Cybersecurity</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <h2>Featured <span class="highlight">Projects</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="project1-placeholder.jpg" alt="Project 1">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>AI-Powered Analytics Dashboard</h3>
+                    <p>A comprehensive analytics platform with machine learning capabilities for data visualization and predictive insights.</p>
+                    <div class="project-tech">
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>TensorFlow</span>
+                        <span>D3.js</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="project2-placeholder.jpg" alt="Project 2">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Blockchain-based Supply Chain</h3>
+                    <p>A decentralized application for tracking products through the supply chain with immutable record-keeping.</p>
+                    <div class="project-tech">
+                        <span>Solidity</span>
+                        <span>Web3.js</span>
+                        <span>Ethereum</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="project3-placeholder.jpg" alt="Project 3">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>IoT Smart Home System</h3>
+                    <p>An integrated system for controlling and monitoring smart home devices with voice commands and mobile app.</p>
+                    <div class="project-tech">
+                        <span>Arduino</span>
+                        <span>MQTT</span>
+                        <span>React Native</span>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view-more">
+            <a href="#" class="btn primary-btn">View All Projects</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Get In <span class="highlight">Touch</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's Connect</h3>
+                <p>Feel free to reach out for collaborations, opportunities, or just a tech chat!</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>startech@example.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+234 901 780 0032</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>San Francisco, CA</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://whatsapp.com/channel/0029Vb9roKkFi8xfc8sDYA05" class="social-link whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://tiktok.com/@tz_joker2010" class="social-link tiktok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://t.me/startech3/" class="social-link telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://github.com/Starboy2010" class="social-link github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@Techlord2010" class="social-link linkedin">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">STARTECH</div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://whatsapp.com/channel/0029Vb9roKkFi8xfc8sDYA05" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://tiktok.com/@tz_joker2010" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                <a href="https://t.me/startech3/" class="social-icon"><i class="fab fa-telegram"></i></a>
+                <a href="https://github.com/Starboy2010" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/@Techlord2010" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Startech. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
